@@ -7,25 +7,23 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-const Story = () => {
-  return (
-    <Swiper
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
-      autoplay={{ delay: 5000 }}
-      navigation
-      pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      onSwiper={(swiper: any) => console.log(swiper)}
-      onSlideChange={() => console.log("slide change")}
-    >
-      <SwiperSlide>
-        <img src="https://picsum.photos/450/800" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <img src="https://picsum.photos/450/810" />
-      </SwiperSlide>
-    </Swiper>
-  );
-};
+const Story = () => (
+  <Swiper
+    modules={[Navigation, Pagination, Scrollbar, A11y]}
+    autoplay={{ delay: 5000 }}
+    navigation
+    pagination={{ clickable: true }}
+    scrollbar={{ draggable: true }}
+    onSwiper={(swiper: any) => console.log(swiper)}
+    onSlideChange={() => console.log("slide change")}
+  >
+    <SwiperSlide>
+      <img src="https://picsum.photos/450/800" />
+    </SwiperSlide>
+    <SwiperSlide>
+      <img src="https://picsum.photos/450/810" />
+    </SwiperSlide>
+  </Swiper>
+);
 
 export default Story;
