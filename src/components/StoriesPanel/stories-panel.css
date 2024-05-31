@@ -1,0 +1,24 @@
+.horizontal-scroll {
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.story-border {
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+}
+
+.image-border {
+  border-radius: 50%;
+  border-style: solid;
+  border-color: white;
+  border-width: 5px;
+}
