@@ -24,11 +24,6 @@ const Story = () => {
       <SwiperSlide>
         <img src="https://picsum.photos/450/810" />
       </SwiperSlide>
-      <SwiperSlide>
-        {({ isActive }) => (
-          <div>Current slide is {isActive ? "active" : "not active"}</div>
-        )}
-      </SwiperSlide>
     </Swiper>
   );
 };
